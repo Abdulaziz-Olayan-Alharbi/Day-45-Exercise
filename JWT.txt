@@ -1,0 +1,7 @@
+JWT (JSON Web Token) is a compact for transmitting data as a JSON object, and it is considered reliable because it contains a digital signature. When the JWT is encrypted, it can be used for user authentication and authorization.
+
+JWT consists of three main components. The first is the header, which includes the type of token (in this case, JWT) and the algorithm used, whether it's a secret or a public/private key. The second component is the payload, which contains the user-specific data being transmitted, such as the ID or role. The third component is the signature, which is used to encrypt or decrypt the token.
+
+When a user logs in, Spring Security authenticates the user. If authentication is successful, a JWT is generated and sent back to the client, JWT can be used for user authorization.
+The JWT compact is considered secure, reliable, and easy to pass and use. Additionally, it eliminates the need for the server to store sessions, which helps in scaling the application.
+
